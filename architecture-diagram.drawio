@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case Maps Architecture" id="use-case-maps-arch">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Frontend Layer -->
+        <mxCell id="frontend-layer" value="Frontend Layer (Streamlit)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF3621;strokeColor=#000000;fontColor=#ffffff;fontSize=14;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="1000" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="app-ui" value="Streamlit UI&#xa;app.py&#xa;Dark Mode Interface" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sidebar" value="Sidebar&#xa;Navigation&#xa;User/Maps Browser" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="form" value="Use Case Form&#xa;4-Stage Editor&#xa;Activity Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="view" value="Excel-like View&#xa;Timeline Display&#xa;Progress Tracking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Business Logic Layer -->
+        <mxCell id="logic-layer" value="Business Logic Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8C00;strokeColor=#000000;fontColor=#ffffff;fontSize=14;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="1000" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="user-mgmt" value="User Management&#xa;Multi-user Support&#xa;Session State" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-mgmt" value="Use Case Management&#xa;CRUD Operations&#xa;ID Generation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="280" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="template-mgmt" value="Template Management&#xa;MAP Templates&#xa;Conditional Loading" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="data-sync" value="Data Synchronization&#xa;Local + Database&#xa;Audit Tracking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="840" y="280" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Access Layer -->
+        <mxCell id="data-layer" value="Data Access Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B3139;strokeColor=#000000;fontColor=#ffffff;fontSize=14;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="1000" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="lakebase-service" value="Lakebase Service&#xa;services/lakebase.py&#xa;Multi-driver Support" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B4D7E7;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="480" width="320" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="local-storage" value="Local Storage&#xa;JSON Files&#xa;use_case_data/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B4D7E7;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="480" width="240" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="config" value="Configuration&#xa;config.py&#xa;.env Support" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B4D7E7;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="760" y="480" width="280" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Database Layer -->
+        <mxCell id="database-layer" value="Database Layer (Lakebase/PostgreSQL)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0B1929;strokeColor=#000000;fontColor=#ffffff;fontSize=14;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="640" width="720" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="use-case-maps-table" value="test.use_case_maps&#xa;App-created Use Cases&#xa;Editable&#xa;Audit Fields" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#000000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="120" y="680" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="maps-table" value="test.maps&#xa;Template Maps&#xa;Read-only&#xa;Reference Data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#000000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="340" y="680" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="template-table" value="test.template&#xa;MAP Templates&#xa;U2-U5 Activities&#xa;47 Activities" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#000000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="560" y="680" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Templates -->
+        <mxCell id="templates" value="Templates &amp; Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#000000;fontSize=14;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="840" y="640" width="240" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="map-template" value="MAP Template&#xa;consolidated_map_template.py&#xa;U2-U6 Stages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="860" y="680" width="200" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sample-data" value="Sample Data&#xa;data/sample_plans.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="860" y="740" width="200" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sidebar" target="user-mgmt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="form" target="usecase-mgmt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="usecase-mgmt" target="lakebase-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lakebase-service" target="use-case-maps-table">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
